@@ -1,0 +1,87 @@
+html, body {
+	height: 100%;
+	background: #4DB6AC;
+	color: #fff;
+}
+
+h1 {
+	font-family: "Cabin Sketch", sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 220px;
+}
+
+.btn-shorten:focus {
+	outline: 0 !important;
+}
+
+.url-input:focus {
+	outline: 0 !important;
+	border: none;
+	background: #FAFAFA;
+	transition: background 0.2s;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+}
+
+.input-group {
+	margin-top: 20px;
+}
+
+.url-input {
+	outline: 0 !important;
+	border: none;
+	font-family: "Inconsolata", monospace;
+	transition: background 0.2s;
+	-webkit-transition: background 0.2s;
+	-moz-transition: background 0.2s;
+}
+
+.btn-shorten {
+	font-family: "Inconsolata", monospace;
+	border: none;
+	/*background: #009688;*/
+	background: #26A69A;
+	/*color: #F5F5F5;*/
+	color: #000;
+	transition: background 0.3s;
+	transition: color 0.3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+}
+
+.btn-shorten:hover {
+	font-family: "Inconsolata", monospace;
+	border: none;
+	background: #009688;
+	color: #fff;
+	transition: background 0.3s;
+	transition: color 0.3s;
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+}
+
+#link {
+	margin: 0 auto;
+	text-decoration: none;
+	color: #fff;
+}
+
+#holder {
+	font-family: "Inconsolata", monospace;
+	font-size: 2em;
+	padding-top: 20px;
+	color: #A7FFEB;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}

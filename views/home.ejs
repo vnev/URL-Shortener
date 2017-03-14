@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>The Best URL Shortener</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Inconsolata" rel="stylesheet">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="js/shorten.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="container">
+			<h2 class="text-center"><span class="glyphicon glyphicon-resize-small"></span><span class="glyphicon glyphicon-link"></span></h2>
+			<h1 class="text-center">Welcome to Shortener!</h1>
+
+			<div class="row">
+				<div class="col-lg-12">
+					<form action="/shorten" method="POST">
+						<div class="input-group input-group-lg">
+							<input class="form-control url-input" type="text" name="url" id="url" placeholder="Enter URL here...">
+							<span class="input-group-btn">
+								<button id="shorten" class="btn btn-shorten" type="submit">Shorten!</button>
+							</span>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-lg-12">
+					<div id="holder">Your shortened URL is: <a id="link" href="<%= shortUrl %>"><%= shortUrl %></a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
